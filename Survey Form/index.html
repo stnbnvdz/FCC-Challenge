@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Movie Marketing | Survey Form</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+   
+  </head>
+  <body> <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title"><span style='font-size:40px;'>&#9733;</span> Movie Marketing Survey <span style='font-size:40px;'>&#9733;</span></h1>
+    <div id="form">
+      <p id="description">
+        Hello and thank you for taking our survey. 
+      </p>
+      <form id="survey-form" method="GET" action="">
+        <fieldset>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name"><span style="color:red">*</span>  Name: </label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email"><span style="color:red">*</span> Email: </label>
+          </div>
+          <div class="rightTab">
+            <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="number-label" for="age"><span style="color:red">*</span>  Age: </label>
+          </div>
+          <div class="rightTab">
+            <input type="number" name="age" id="number" min="1" max="99" class="input-field" placeholder="Age">
+          </div>
+        </div>
+      </fieldset>
+       <fieldset>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="userAnswer"> Is watching movies a hobby for you ?</label>
+          </div>
+          <div class="rightTab">
+            <ul style="list-style: none;">
+              <li class="radio"><label>Yes<input name="radio-buttons" value="1"  type="radio" class="userAnswers" ></label></li>
+              <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userAnswers" ></label></li>
+              <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userAnswers" ></label></li>
+            </ul>
+          </div>
+        </div>
+
+          <div class="rowTab">
+              <div class="labels">
+                <label for="userAnswer">  What do you like most about your favorite movie ?</label>
+              </div>
+              <div class="rightTab">
+                <ul style="list-style: none;">
+                  <li class="radio"><label>Quality of Story<input name="radio-buttons1" value="quality"  type="radio" class="userAnswers" ></label></li>
+                  <li class="radio"><label>Acting<input name="radio-buttons1" value="acting"  type="radio" class="userAnswers" ></label></li>
+                  <li class="radio"><label>Directing<input name="radio-buttons1" value="directing"  type="radio" class="userAnswers" ></label></li>
+                  <li class="radio"><label>Genre<input name="radio-buttons1" value="genre"  type="radio" class="userAnswers" ></label></li>
+                </ul>
+              </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                  <label id="movie-label" for="fav-movie"> What is your favorite Movie ? </label>
+                </div>
+                <div class="rightTab">
+                  <input type="text" name="fav-movie" id="fav-movie" class="input-field" required placeholder="">
+                </div>
+              </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="most-like">When do you usually go to the movies ?</label>
+          </div>
+          <div class="rightTab">
+            <select id="dropdown" name="mostLike" class="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option value="weekdays">Weekdays</option>
+          <option value="weekends">Weekends</option>
+          <option value="friday">Friday Night</option>
+          <option value="other">Once a month</option>
+        </select>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="preferences">Please select any of the following movies that you saw in the movie theatre.
+              </label>
+          </div>
+          <div class="rightTab">
+            <ul id="preferences" style="list-style: none;">
+              <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="Answers">Avengers Endgame</label></li>
+              <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Toy Story 4</li>
+              <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userAnswers">John Wick: Chapter 3</label></li>
+              <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userAnswers">Spider-Man</label></li>
+              <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userAnswers">Shazam</li>
+              <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userAnswers">The Lion King Animation</label></li>
+              <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userAnswers">Aladdin</label></li>
+              <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userAnswers">How To Train Your Dragon</label></li>
+              <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userAnswers">Dumbo</label></li>
+              <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userAnswers">Annabelle Comes Home</label></li>
+              <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userAnswers">Hellboy</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="comments">Please let us know if you have any comments or suggestions on how we can improve this survey. Thank you for your participation!</label>
+          </div>
+          <div class="rightTab">
+            <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div></body>
+</html>
