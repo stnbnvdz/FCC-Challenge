@@ -1,0 +1,222 @@
+@import "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 300%;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/** reusable**/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+section {
+  padding: 80px 0;
+}
+.box {
+  padding: 1%;
+}
+a {
+  text-decoration: none;
+  color: gray;
+}
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+h4 {
+  font-size: 110%;
+  margin-bottom: 15px;
+  word-spacing: 2px;
+  text-align: center;
+}
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #0080ff;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#header {
+  background-image: url(https://image.freepik.com/free-photo/drawing-pushing-trolley-carrying-happiness_1134-939.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+#header-img {
+  height: 70px;
+  width: auto;
+  float: left;
+  padding-bottom: 5px;
+}
+#nav-bar {
+  position: fixed;
+  align-items: flex-end;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  box-shadow: 0px 0px 10px gray;
+  display: flex;
+  line-height: 50px;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav .brand {
+  flex: 1;
+  align-self: flex-start;
+  height: 50px;
+  margin-left: 10px;
+}
+
+nav .nav-link {
+  flex: 1;
+  max-width: max-content;
+  margin-right: 40px;
+}
+
+#tagline {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#features .f-description {
+  margin-bottom: 30px;
+}
+#to-order {
+  padding-top: 50px;
+  background-image: url(https://image.freepik.com/free-vector/blue-delivery-boy-isometric-style_114360-140.jpg);
+  background-repeat: no-repeat;
+}
+.works-step {
+  margin-bottom: 50px;
+}
+.works-step:last-of-type {
+  margin-bottom: 80px;
+}
+.works-step div {
+  color: #57a0d3;
+  border: 2px solid #57a0d3;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color: #57a0d3;
+  margin-bottom: 10px;
+}
+.dl-button {
+  height: 50px;
+  width: auto;
+  margin-left: 100px;
+}
+#newsletter {
+  background-color: #89cff0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+} /*-- Form --*/
+form input,
+form input:focus {
+  padding: 10px 13px;
+  border: 0;
+  outline: 0;
+}
+
+form input[type="email"] {
+  margin-right: 15px;
+  width: 300px;
+  color: #a09f9f;
+}
+
+form input[type="submit"] {
+  padding: 10px 15px;
+  color: #c0d6db;
+  background: #427b89;
+  text-shadow: 0 2px 2px #333;
+  box-shadow: inset 0 0 0 transparent;
+  background: #508f9f;
+  background: linear-gradient(to bottom, #508f9f 0%, #346976 100%);
+  transition: all 0.3s ease-in-out;
+}
+
+footer {
+  background-color: #fff;
+  padding: 30px;
+  font-size: 80%;
+  text-align: center;
+}
+@media only screen and (max-width: 1200px) {
+  .tagline {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .row {
+    padding: 0 2%;
+  }
+}
