@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="LandingPage" />
+    <meta name="author" content="Austin" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/Grid.css" />
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header id="header">
+      <nav id="nav-bar">
+        <a class="brand">
+          <img
+            src="https://rx2go.nyc/wp-content/uploads/2018/03/logo.png"
+            alt="logo"
+            id="header-img"
+          />
+        </a>
+        <a class="nav-link" href="#header">Home</a>
+        <a class="nav-link" href="#features">About</a>
+        <a class="nav-link" href="#to-order">How it works</a>
+        <a class="nav-link" href="#newsletter">Newsletter</a>
+      </nav>
+
+      <div id="tagline">
+        <h1>Medicine on the go.<br />Speedifying Delivery.</h1>
+
+        <iframe
+          id="video"
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/wVTAm3y4cYk"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </header>
+
+    <section id="features">
+      <div class="row">
+        <h2>With Health &mdash; Time Matters</h2>
+        <p class="f-description">
+          Hello, we’re Rx2Go, your new premium instant medicine and prescription
+          delivery service in the Philippines. We know you’re always busy. No
+          time laning up on drugstores. So let us take care of that, we'll
+          deliver your prescription!
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col span-1-of-3 box">
+          <i class="ion-ios-stopwatch-outline icon-big"></i>
+          <h3>Same day delivery</h3>
+          <p>
+            With health, time is of the essence. Insta Rx was exclusively
+            designed to revolutionize delivery service in the Philippines.
+          </p>
+        </div>
+        <div class="col span-1-of-3 box">
+          <i class="ion-ios-home-outline icon-big"></i>
+          <h3>Medicine at your door step</h3>
+          <p>
+            Custom delivery speeds – 1 hour, 2 hours, 3 hours, same day etc.
+          </p>
+        </div>
+        <div class="col span-1-of-3 box">
+          <i class="ion-ios-medkit-outline icon-big"></i>
+          <h3>Professional Delivery.</h3>
+          <p>
+            Not just an ordinary driver. Our delivery man is certified paramedic
+            and well trained in this area.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="to-order">
+      <div class="row">
+        <h2>How it works</h2>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-2 steps-box"></div>
+        <div class="col span-1-of-2 steps-box">
+          <div class="works-step">
+            <div>1</div>
+            <p>
+              Order your prescription using our web and mobile application of
+              your choice.
+            </p>
+          </div>
+          <div class="works-step">
+            <div>2</div>
+            <p>
+              Choose delivery time you want and drugstore. We provide e-payment
+              and Cash-On-Delivery for payment.
+            </p>
+          </div>
+          <div class="works-step">
+            <div>3</div>
+            <p>
+              Relax and wait for your medicine at your doorstep.
+            </p>
+          </div>
+
+          <a href="#" class="dl-button"
+            ><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGcLBchzmY3HQP2Xg81rTt49PmvlGX1U6BDbBJcWPA7gTYn4f7"
+              alt="Play Store Button"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section id="newsletter">
+      <div class="row">
+        <h4>Subscribe to our newsletter &hellip;</h4>
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input id="submit" type="submit" value="Subscribe" class="btn" />
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="row">
+        <p>
+          Copyright &copy; 2019 by Rx2Go. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
