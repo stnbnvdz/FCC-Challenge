@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Monaca Documentation</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <nav id="navbar">
+      <header>
+        <img
+          src="https://docs.monaca.io/images/common/header_logo_docs.png"
+          alt="logo"
+          id="logo"
+        />
+      </header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#What_Is_Monaca?">What Is Monaca?</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Monaca_Development_Tools"
+            >Monaca Development Tools</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Monaca_Debugger">Monaca Debugger</a></li>
+        <li><a class="nav-link" href="#Monaca_Backend">Monaca Backend</a></li>
+        <li>
+          <a class="nav-link" href="#Characteristics_of_Hybrid_Apps"
+            >Characteristics of Hybrid Apps</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="What_Is_Monaca?">
+        <header>What Is Monaca?</header>
+        <hr />
+        <article>
+          <p>
+            Monaca is a development environment for smartphone and tablet
+            applications provided by Asial Corporation. Monaca does not only
+            provide you with a development environment at your fingertips but
+            also allows anyone to be able to develop smartphone applications
+            easier.
+          </p>
+
+          <p>
+            Monaca makes HTML5 hybrid mobile app development with
+            PhoneGap/Cordova simple and easy. Monaca is the most open hybrid app
+            development platform avaiable and ready to be immediately plugged
+            into your existing workflow and development environment. From Cloud
+            IDE, CLI to debugger and remote online build, everything you need
+            for your hybrid app development is here.
+          </p>
+
+          <img
+            src="https://docs.monaca.io/images/monaca_intro/overview.png"
+            alt="monaca"
+            id="monaca"
+          />
+          <h2>Why Use Monaca?</h2>
+          <hr />
+          <p>Monaca’s top 3 benefits are:</p>
+
+          <p>
+            1) Cloud-empowered Development: Our tools are designed to utilize
+            the cloud to supercharge your app development in two ways. The
+            complete cloud development environment gives you flexibility with no
+            setup required. And the cloud-synced local development enables you
+            to use your own environment but enjoy features like device live-sync
+            and remote build. It’s the best of both worlds.
+          </p>
+
+          <p>
+            2)Framework Agnostic: Our open source Onsen Framework is tightly
+            integrated with Monaca tools. However, you can use Monaca with any
+            JavaScript frameworks. We support Angular 1, 2+, React and Vue.js,
+            or you can bring your own favorite framework. There are many
+            templates ready to use, so you can get started immediately.
+          </p>
+
+          <p>
+            3) Mix-and-match as You Like: We’ve got you covered all the way from
+            design, app development, backend development, testing & debugging to
+            build & distribution. Monaca can be used as a whole or a piece,
+            working with your favorite tools like Sublime Text or Git. Just pick
+            what you need. We will seamlessly plug into your workflow.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Monaca_Development_Tools">
+        <header>Monaca Development Tools</header>
+        <hr />
+        <article>
+          <p>
+            For your flexibility and convenience during app development process,
+            Monaca provides four different development environments as shown in
+            the following subsections.
+          </p>
+          <img
+            src="https://docs.monaca.io/images/monaca_intro/development_tools.png"
+            alt="dev-tools"
+            id="monaca"
+          />
+          <h2>Monaca Cloud IDE</h2>
+          <hr />
+          <p>
+            Monaca Cloud IDE is a browser-based development environment. Right
+            from your Web browser, all of your Cordova development can be done
+            without any setup. From Cordova IDE, debugger to remote build, we’ve
+            got everything you need in one place.
+          </p>
+          <p>
+            Monaca Cloud IDE provides a browser-based development environment as
+            a service. Right from your Web browser, all of your Cordova
+            development is done without any setup. Along with the Monaca
+            Debugger, Live Preview (built-in function in Monaca Cloud IDE)
+            allows you to easily check the progress of your apps during
+            development. Noticeably, there are neither Cordova plugins nor
+            native functions in Live Preview. Therefore, the app required those
+            plugins and functions can’t be previewed properly.
+          </p>
+          <img
+            src="https://docs.monaca.io/images/monaca_intro/ide.png"
+            alt="dev-tools"
+            id="monaca"
+          />
+          <h2>Monaca Localkit</h2>
+          <hr />
+          <p>
+            Monaca Localkit is a local environment development support tool
+            offered through our app development platform, “Monaca”. You can
+            achieve better security and peace-of-mind from your own app
+            development environment by combining existing tools such as code
+            editors and version management system, with the versatile
+            development support capabilities of Monaca. With Monaca Localkit,
+            Monaca users are able to setup their preferred development
+            environment on local PC.
+          </p>
+
+          <img
+            src="https://docs.monaca.io/images/monaca_intro/5.png"
+            alt="dev-tools"
+            id="monaca"
+          />
+          <h2>Monaca CLI</h2>
+          <hr />
+          <p>
+            Monaca CLI provides command line interface to use Monaca Cloud. It
+            features the debugger connection, inspector integration, project
+            creation and remote building. You can also import projects that
+            exist in the cloud when you want to switch your environment to
+            local.
+          </p>
+
+          <p>monaca login</p>
+          <code>$ monaca login [options] </code>
+          <p>monaca logout</p>
+          <code>$ monaca logout </code>
+          <p>monaca update</p>
+          <code>$ monaca update [options] </code>
+          <p>monaca init</p>
+          <code>$ monaca init </code>
+          <p>monaca signup</p>
+          <code>$ monaca signup <br />$ monaca signup me@monaca.io</code>
+          <p>monaca create</p>
+          <code>$ monaca create [options]</code>
+          <p>monaca clone</p>
+          <code>$ monaca clone</code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Monaca_Debugger">
+        <header>Monaca Debugger</header>
+        <hr />
+        <article>
+          <p>
+            On top of the flexibility in the development environment, Monaca
+            also provides high development efficiency by using Monaca Debugger.
+            Monaca Debugger is an application used to test and debug your Monaca
+            applications on real devices without building the applications
+            during the development. It needs to be installed on your mobile
+            devices. The app will automatically sync all your development
+            projects and run them without the build process.
+          </p>
+          <img
+            src="https://docs.monaca.io/images/monaca_intro/2.png"
+            alt="dev-tools"
+            id="app"
+          />
+        </article>
+      </section>
+
+      <section class="main-section" id="Monaca_Backend">
+        <header>Monaca Backend</header>
+        <hr />
+        <article>
+          <p>
+            Simple and easy backend service APIs are available for Cordova Apps.
+            Push notifications, user management, remote database, email delivery
+            and much more. Backend Management APIs is also provided for the
+            access from your backend server.
+          </p>
+          <p>
+            There is a growing need for mobile apps to have user management
+            functions which allow users to register and keep their data in a
+            database. Monaca Backend provides these functionalities in advance
+            as a cloud-based service that can manage users without a need for
+            server-side development on the client’s part.
+          </p>
+          <p>
+            In order to add Monaca Backend into your Monaca project, please do
+            as follows:
+          </p>
+          <ul>
+            <li>
+              From Monaca Cloud IDE menu, click on Backend. Then, Monaca Backend
+              will be open in a new tab.<br />
+            </li>
+            <br />
+            <li>
+              Click on Create and use the Monaca Backend button.
+            </li>
+            <br />
+            <li>
+              The following dialog will appear. You can create a new Backend, or
+              select an existing one which is used in a different project. Then,
+              click Apply to attach the Backend to your project.
+
+              <img
+                src="https://docs.monaca.io/images/backend/getting_started/1.png"
+                alt="backend"
+              />
+            </li>
+            <br />
+            <li>
+              After attaching the Backend, the Backend Control panel will
+              appear. Within this control panel, various Backend Operations can
+              be done. These backend operations can also be done using Monaca
+              Backend API.<br /><br />
+              <img
+                src="https://docs.monaca.io/images/backend/getting_started/2.png"
+                alt="monaca"
+                id="monaca"
+              />
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Characteristics_of_Hybrid_Apps">
+        <header>Characteristics of Hybrid Apps</header>
+        <hr />
+        <ul>
+          <li>
+            The apps consist of the Web and native characteristics. (See the
+            picture below)
+          </li>
+          <br />
+          <li>
+            Regardless of operating systems, hybrid apps run on a browser
+            component (cross-platform support). In other words, they can run on
+            iOS, Android, and other supported platforms since they run on
+            WebView component of those platforms. Therefore, one source code can
+            run on multiple supported platforms.
+          </li>
+        </ul>
+        <br />
+        <img
+          src="https://docs.monaca.io/images/monaca_intro/4.png"
+          alt="hybrid_apps"
+          id="monaca"
+        />
+        <p>Required knowledge for hybrid app development:</p>
+        <li>
+          HTML and CSS for UI (User Interface) design
+        </li>
+        <li>JavaScript for implementing the app</li>
+        <li>
+          Cordova plugins for accessing the native functions of a device and
+          additional plugins
+        </li>
+      </section>
+    </main>
+  </body>
+</html>
