@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: "Helvitica", sans-serif;
+  font-size: 20px;
+  font-weight: 300%;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+section {
+  padding: 20px 0;
+}
+.box {
+  padding: 1%;
+}
+a {
+  text-decoration: none;
+  color: gray;
+}
+#navbar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2687ea;
+  border-right: solid #00c3ff;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+#navbar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+}
+
+#navbar a:hover {
+  color: #f1f1f1;
+}
+
+#main-doc {
+  margin-left: 250px;
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  padding: 20px;
+  position: absolute;
+  margin-bottom: 110px;
+}
+header {
+  font-size: 150%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+p {
+  word-spacing: 5px;
+  margin-bottom: 20px;
+}
+#monaca {
+  width: 75%;
+  height: 75%;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+hr {
+  margin: 20px 20px;
+  width: 92%;
+}
+#app {
+  width: auto;
+  height: 450px;
+  margin-left: 350px;
+}
+code {
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+@media screen and (max-height: 450px) {
+  #navbar {
+    padding-top: 15px;
+  }
+  #navbar a {
+    font-size: 18px;
+  }
+}
